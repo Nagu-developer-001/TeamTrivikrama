@@ -1,0 +1,52 @@
+.navbar-expand-md{
+    background-color: white;
+    height: 5rem;
+}
+.fa-solid {
+    color: #fe424d !important;
+    background-color: white;
+    opacity: 1;
+    font-size: larger;
+}
+.nav-link{
+    color: #222222 !important;
+    opacity: 0.7;
+    transition:opacity 0.6s linear ,font-weight 0.6s linear !important;
+}
+.nav-link:hover{
+    opacity: 1;
+    font-weight: 450;
+} 
+.f-clsss-links a{
+    text-decoration: none;
+    color: #222;
+}
+.f-clsss-links a:hover{
+    text-decoration: underline;
+}
+.f-clsss-socilac,.f-clsss-links,.f-clsss-company{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+.f-clsss-socilac {
+    font-size:1.5rem;
+}
+.f-clsss-socilac i{
+    margin-right: 1rem;
+}
+.f-clsss-whole{
+    text-align:center;
+    background-color: #bebebe;
+    height:5rem;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+    align-items: space-evenly;
+}
+.card-img-top{
+    border-radius:20px;
+    height: 10rem;
+    margin-right: 2rem;
+}

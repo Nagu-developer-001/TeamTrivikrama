@@ -1,0 +1,19 @@
+<%- layout("/layout/boilerplate") %>
+<body>
+    <h1>Create New Listing</h1><br><br>
+    <form action="http://localhost:8080/listing" method="post">
+        <label for="title">Title : </label>
+        <input type="text" placeholder="Enter title" name="Listing[title]" required><br>
+        <label for="description">Description : </label><br>
+        <textarea placeholder="Enter Description" name="Listing[description]" required rows="6" cols="30"></textarea><br><br>
+        <label for="image">Image : </label>
+        <input type="text" src="" alt="" name="Listing[image]" placeholder="Enter URL"><br>
+        <label for="price">Price : </label>
+        <input type="number" placeholder="Enter Price" name="Listing[price]" required><br>
+        <label for="location">Location : </label>
+        <input type="text" placeholder="Enter Location" name="Listing[location]" required><br>
+        <label for="country">Country : </label>
+        <input type="text" placeholder="Enter Country" name="Listing[country]" required><br>
+        <button>Submit</button><!--SENDED DATA IN BULK SOMEHOW IN ARRAY FORMAT-->
+    </form>
+</body>

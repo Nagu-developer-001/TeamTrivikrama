@@ -1,0 +1,25 @@
+<%- layout("/layout/boilerplate") %>
+<body>
+    <h3>In detail explaination about this place - <%= content.title %></h3>
+    <ul>
+        <li><%= content.title %></li>
+        <li><%= content.description %></li>
+        <li>&#8377;<%= content.price.toLocaleString("en-IN") %></li>
+        <li><%= content.location %></li>
+        <li><%= content.image %></li>
+        <li><%= content.country %></li>
+    </ul>
+    <a href="http://localhost:8080/listing/<%= content._id %>/edits">edit</a>
+    <form action="http://localhost:8080/listing/<%= content._id %>?_method=DELETE" method="post">
+        <button>Delete</button>
+    </form>
+    <script>
+        document.querySelector("form").addEventListener("submit",(e)=>{
+            e.preventDefault();
+            let con = confirm("Are sure this data will be deleted permanently!!!");
+            if(con){
+                document.querySelector("form").submit();
+            }
+        });
+    </script>
+</body>
