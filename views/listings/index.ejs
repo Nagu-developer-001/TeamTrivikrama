@@ -7,11 +7,12 @@
     </form> -->
     <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
         <%for(list of allListing){%>
-            <a href="http://localhost:8080/listing/<%= list._id %>">
-                <div class="card" style="width: 18rem;">
+            <a href="http://localhost:8080/listing/<%= list._id %>" class="listing-anch">
+                <div class="card col">
                     <img src="<%=list.image.url%>" class="card-img-top" alt="...">
+                    <div class="card-img-overlay"></div>
                     <div class="card-body">
-                    <p class="card-text"><%= list.title %><br>
+                    <p class="card-text"><b><%= list.title %></b><br>
                         Price :&#8377;<%= list.price.toLocaleString("en-IN") %></p>
                     </div>
                 </div>
