@@ -1,5 +1,13 @@
 body{
     font-family: "Plus Jakarta Sans", sans-serif !important;
+    /* btn color in new form  */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}/* btn color in new form  */
+.container{
+    flex:1;
+    /* btn color in new form  */
 }
 .navbar-expand-md{
     background-color: white;
@@ -48,6 +56,7 @@ body{
     justify-content: center;    
     align-items: space-evenly;
 }
+/* cards-list */
 .card-img-top{
     height: 20rem;
     margin-right: 2rem;
@@ -76,4 +85,17 @@ body{
 .card-img-overlay:hover{
     opacity: 0.1;
     background-color: white;
+}
+/* btn color in new form  */
+.add-btn{
+    background-color: #fe424d !important;
+    border:none !important;
+}
+
+.show-Photo{
+    height: 30vh;
+}
+.colbtn{
+    display: flex;
+    
 }

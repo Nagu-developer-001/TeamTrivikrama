@@ -1,19 +1,33 @@
 <%- layout("/layout/boilerplate") %>
 <body>
-    <h1>Create New Listing</h1><br><br>
-    <form action="http://localhost:8080/listing" method="post">
-        <label for="title">Title : </label>
-        <input type="text" placeholder="Enter title" name="Listing[title]" required><br>
-        <label for="description">Description : </label><br>
-        <textarea placeholder="Enter Description" name="Listing[description]" required rows="6" cols="30"></textarea><br><br>
-        <label for="image">Image : </label>
-        <input type="text" src="" alt="" name="Listing[image]" placeholder="Enter URL"><br>
-        <label for="price">Price : </label>
-        <input type="number" placeholder="Enter Price" name="Listing[price]" required><br>
-        <label for="location">Location : </label>
-        <input type="text" placeholder="Enter Location" name="Listing[location]" required><br>
-        <label for="country">Country : </label>
-        <input type="text" placeholder="Enter Country" name="Listing[country]" required><br>
-        <button>Submit</button><!--SENDED DATA IN BULK SOMEHOW IN ARRAY FORMAT-->
-    </form>
+    <h3>Create New Listing</h3><br>
+    <div class="row">
+        <div class="col-8 offset-2">
+            <form action="http://localhost:8080/listing" method="post">
+                <div class="mb-3"><label for="title" class="form-label">Title : </label>
+                    <input type="text" placeholder="Enter title" name="Listing[title]" required class="form-control"></div>
+                <div class="mb-3"><label for="description" class="form-label">Description : </label><br>
+                    <textarea placeholder="Enter Description" name="Listing[description]" required rows="4" cols="30" class="form-control"></textarea></div>
+                <div class="mb-3">
+                    <label for="image" class="form-label">Image : </label>
+                <input type="text" src="" alt="" name="Listing[image]" placeholder="Enter URL" class="form-control">
+                </div>
+                <div class="row">
+                    <div class="mb-3 col-sm-6">
+                        <div class="mb-3">
+                            <label for="price" class="form-label">Price : </label>
+                        <input type="number" placeholder="Enter Price" name="Listing[price]" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="mb-3 col-sm-6">
+                        <div class="mb-3"><label for="country" class="form-label">Country : </label>
+                            <input type="text" placeholder="Enter Country" name="Listing[country]" class="form-control" required></div>
+                    </div>
+                    </div>
+                <div class="mb-3"><label for="location" class="form-label">Location : </label>
+                    <input type="text" placeholder="Enter Location" name="Listing[location]" class="form-control" required></div>
+                <button class="btn btn-dark add-btn">Submit</button><!--SENDED DATA IN BULK SOMEHOW IN ARRAY FORMAT-->
+            </form>
+        </div>
+    </div>
 </body>
