@@ -6,6 +6,7 @@ const port = 8080;
 const placeList = require("./models/wonderLust.js");
 const methodOverload = require("method-override");
 const ejsMate = require("ejs-mate");
+//TODO use ejs-locals for all ejs templates:
 app.engine("ejs",ejsMate);
 app.set("view engine","ejs");
 app.set("views",path.join(__dirname,"views"));

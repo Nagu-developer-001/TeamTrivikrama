@@ -34,6 +34,7 @@ body{
 }
 .f-clsss-links a:hover{
     text-decoration: underline;
+    color: dodgerblue;
 }
 .f-clsss-socilac,.f-clsss-links,.f-clsss-company{
     width:100%;
