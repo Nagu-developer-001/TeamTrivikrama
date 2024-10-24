@@ -88,8 +88,7 @@ app.get("/listing/:id/edits",wrapAsync(async(req,res)=>{
 //TODO UPDATE ROUTE
 app.put("/listing/:id",wrapAsync(async(req,res)=>{
     let {id} = req.params;
-    let updated = await placeList.findByIdAndUpdate(id,{...req.body.Listing});
-    console.log(updated);
+    await placeList.findByIdAndUpdate(id,{...req.body.Listing});
     res.redirect("/listing");
 }));
 //TODO DELETE ROUTE
