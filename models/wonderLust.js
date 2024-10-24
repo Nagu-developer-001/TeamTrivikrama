@@ -11,7 +11,7 @@ const placeSchema =  new Schema({
     },
     image:{
         url:String,
-    },
+        },
     price:{
         type:Number,
     },
